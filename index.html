@@ -4,29 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CG120422</title>
+    <title>Aurelia</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </head>
   <body>
     <div class="container">
-      <nav class="menu">
-        <div class="menu-left menu-item">
-          <span class="menu-link">about</span>
-          <span class="menu-link">contact</span>
-        </div>
-        <div class="menu-center menu-item">
-          <div class="brand-logo">palettes</div>
-        </div>
-        <div class="menu-right menu-item">
-          <div class="search-container">
-            <form action="/search" method="get">
-              <input class="search" id="searchleft" type="search" name="q" placeholder="Search">
-              <label class="button searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
-        </div>
-      </nav>
       <div class="images">
         <div class="left img"></div>
         <div class="right img"></div>
@@ -40,10 +35,38 @@
         </div>
       </div>
       <div class="header"><p class="title">aurelia</p></div>
-      <div class="hero-container">
-        <div class="projects">projects</div>
+      <div class="maintext" data-aos="fade-up" data-aos-delay="8000"  >
+        Help us suggest you the best outfits for your trip!
+      </div>
+      
+    </div>
+    <div id="container2">
+      <div class="navbar">
+        <a href="" class="navEl">hOME</a>
+        <a href="" class="navEl">aBOUT</a>
+        <a href="" class="navEl">sEASONS</a>
+        <a href="" class="navEl side-right">sIGN IN</a>
+        <a href="" class="navEl side-right">sIGN UP</a>
+      </div>
+      <div class="modal">
+        <section id="mainboxes">
+          <div class="leftbox">
+            .
+            <div class="where">Where are you headed to? <input type="text"></div>
+            <div class="journey">Journey timeline<input type="date" id="birthday" name="birthday"></div>
+            <div class="Occassion">Occassion <input type="text"></div>
+          </div>
+          <div class="rightbox">
+            
+           </div>
+          
+        </section>
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

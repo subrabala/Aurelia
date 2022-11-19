@@ -4,6 +4,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='letter'>$&</span>"
 );
 
+const month=document.querySelectorAll
 anime.timeline().add({
   targets: ".title .letter",
   translateY: [100, 0],
@@ -63,3 +64,9 @@ TweenMax.staggerFrom(
   },
   0.1
 );
+
+
+const customerDate = document.getElementById('birthday').value;
+const dateHandler = document.getElementById('date-handler');
+dateHandler.innerHTML = customerDate;
+console.log(customerDate);
